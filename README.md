@@ -36,7 +36,9 @@ git clone https://github.com/samoosama1/otonom-taksi.git
 ## 2. Proje Dizinine Gitme
 Klonlama işlemi tamamlandıktan sonra, proje klasörüne gitmeniz gerekir:
 
+```bash
 cd otonom-taksi
+```
 
 ## 3. Yeni Bir Branch Oluşturma ve O Branch'e Geçme
 Yaptığınız özellik veya düzeltme için yeni bir branch oluşturun ve bu branch'e geçin:
@@ -69,7 +71,9 @@ git add .  # Tüm değiştirilmiş ve yeni dosyaları ekler.
 ## 7. Değişiklikleri Commit'leme
 Hazırladığınız değişiklikleri artık commit'leyebilirsiniz:
 
+```bash
 git commit -m "Yaptığım değişikliklerin açıklaması"
+```
 
 Commit mesajınızda ne yaptığınızı kısa ve öz bir şekilde açıklayın. Örneğin: dönme fonksiyonu eklendi.
 
