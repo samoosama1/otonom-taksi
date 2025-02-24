@@ -58,7 +58,35 @@ Değişikliklerinizi commit'lemeden önce, onları "staging area"ya eklemeniz ge
 
 git add .  # Tüm değiştirilmiş ve yeni dosyaları ekler.
 
-Veya belirli dosyaları eklemek için:
+## 7. Değişiklikleri Commit'leme
+Hazırladığınız değişiklikleri artık commit'leyebilirsiniz:
 
-git add dosya1.txt dosya2.txt
+git commit -m "Yaptığım değişikliklerin açıklaması"
+
+Commit mesajınızda ne yaptığınızı kısa ve öz bir şekilde açıklayın. Örneğin: dönme fonksiyonu eklendi.
+
+## 8. Branch'i Remote'a Push'lama
+Değişikliklerinizi commit'ledikten sonra, branch'inizi remote repoya (GitHub'a) göndermelisiniz:
+
+git push origin benim-ozellik-branchim  # Yeni bir branch'i ilk kez push'larken bu kullanılır.
+
+Eğer branch daha önce push'landıysa, sadece şunu kullanabilirsiniz:
+
+git push
+
+## 9. Pull Request Oluşturma
+
+Değişikliklerinizi remote'a push'ladıktan sonra, GitHub üzerinde main'e "pull request" (birleştirme isteği) oluşturmanız gerekmektedir. Bu, değişikliklerinizin incelenmesi ve onaylanması için gereklidir.
+
+Önemli Notlar
+Her zaman branch'lerinizi güncel tutun: git pull origin main
+
+Commit mesajlarınız açıklayıcı olsun.
+
+Pull request oluşturmadan önce değişikliklerinizi test edin.
+
+Takım lideriniz veya diğer geliştiriciler pull request'inizi inceleyip onaylayacaktır.
+
+Takım olarak belirlediğiniz kodlama stili, branch isimlendirme kuralları veya commit mesajı formatı gibi standartlara uyun.
+
 
