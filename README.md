@@ -29,7 +29,9 @@ Bu iş akışını takip ederek, yüksek kaliteli bir kod tabanı ve ekip üyele
 ## 1. Repoyu Klonlama
 Öncelikle, projeyi yerel bilgisayarınıza klonlamanız (indirmeniz) gerekmektedir.
 
+```bash
 git clone https://github.com/samoosama1/otonom-taksi.git 
+```
 
 ## 2. Proje Dizinine Gitme
 Klonlama işlemi tamamlandıktan sonra, proje klasörüne gitmeniz gerekir:
@@ -39,14 +41,18 @@ cd otonom-taksi
 ## 3. Yeni Bir Branch Oluşturma ve O Branch'e Geçme
 Yaptığınız özellik veya düzeltme için yeni bir branch oluşturun ve bu branch'e geçin:
 
+```bash
 git checkout -b benim-ozellik-branchim
+```
 
 benim-ozellik-branchim yerine, yaptığınız işleme uygun, açıklayıcı bir isim verin. Örneğin, park algorithması üzerinde çalışıyorsanız dev/algoritma/park-etme gibi.
 
 ## 4. Mevcut Bir Branch'e Geçme
 Eğer belirli bir branch üzerinde çalışmanız gerekiyorsa, o branch'e geçebilirsiniz:
 
+```bash
 git checkout main  # veya başka bir branch adı (ör: "develop")
+```
 
 main veya develop gibi genel branch'ler yerine, zaten var olan ve size atanan bir görevle ilgili olan bir branch'e geçmeniz gerekebilir.
 
@@ -56,7 +62,9 @@ Bu adımda, projenin kodunda gerekli değişiklikleri yaparsınız:
 ## 6. Değişiklikleri Staging Area'ya Ekleme
 Değişikliklerinizi commit'lemeden önce, onları "staging area"ya eklemeniz gerekir:
 
+```bash
 git add .  # Tüm değiştirilmiş ve yeni dosyaları ekler.
+```
 
 ## 7. Değişiklikleri Commit'leme
 Hazırladığınız değişiklikleri artık commit'leyebilirsiniz:
@@ -68,18 +76,26 @@ Commit mesajınızda ne yaptığınızı kısa ve öz bir şekilde açıklayın.
 ## 8. Branch'i Remote'a Push'lama
 Değişikliklerinizi commit'ledikten sonra, branch'inizi remote repoya (GitHub'a) göndermelisiniz:
 
+```bash
 git push origin benim-ozellik-branchim  # Yeni bir branch'i ilk kez push'larken bu kullanılır.
+```
 
 Eğer branch daha önce push'landıysa, sadece şunu kullanabilirsiniz:
 
+```bash
 git push
+```
 
 ## 9. Pull Request Oluşturma
 
 Değişikliklerinizi remote'a push'ladıktan sonra, GitHub üzerinde main'e "pull request" (birleştirme isteği) oluşturmanız gerekmektedir. Bu, değişikliklerinizin incelenmesi ve onaylanması için gereklidir.
 
 Önemli Notlar
-Her zaman branch'lerinizi güncel tutun: git pull origin main
+Her zaman branch'lerinizi güncel tutun: 
+
+```bash
+git pull origin main
+```
 
 Commit mesajlarınız açıklayıcı olsun.
 
