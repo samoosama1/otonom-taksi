@@ -25,3 +25,40 @@ Bu proje, kod kalitesini ve iş birliğini korumak için korumalı dallar ve bir
 - Geri bildirimleri ele alın ve gerekli revizyonları yapın.
 
 Bu iş akışını takip ederek, yüksek kaliteli bir kod tabanı ve ekip üyeleri arasında etkili bir iş birliği sağlayabiliriz.
+
+## 1. Repoyu Klonlama
+Öncelikle, projeyi yerel bilgisayarınıza klonlamanız (indirmeniz) gerekmektedir.
+
+git clone https://github.com/samoosama1/otonom-taksi.git 
+
+## 2. Proje Dizinine Gitme
+Klonlama işlemi tamamlandıktan sonra, proje klasörüne gitmeniz gerekir:
+
+cd otonom-taksi
+
+## 3. Yeni Bir Branch Oluşturma ve O Branch'e Geçme
+Yaptığınız özellik veya düzeltme için yeni bir branch oluşturun ve bu branch'e geçin:
+
+git checkout -b benim-ozellik-branchim
+
+benim-ozellik-branchim yerine, yaptığınız işleme uygun, açıklayıcı bir isim verin. Örneğin, park algorithması üzerinde çalışıyorsanız dev/algoritma/park-etme gibi.
+
+## 4. Mevcut Bir Branch'e Geçme
+Eğer belirli bir branch üzerinde çalışmanız gerekiyorsa, o branch'e geçebilirsiniz:
+
+git checkout main  # veya başka bir branch adı (ör: "develop")
+
+main veya develop gibi genel branch'ler yerine, zaten var olan ve size atanan bir görevle ilgili olan bir branch'e geçmeniz gerekebilir.
+
+## 5. Değişiklikleri Yapma
+Bu adımda, projenin kodunda gerekli değişiklikleri yaparsınız:
+
+## 6. Değişiklikleri Staging Area'ya Ekleme
+Değişikliklerinizi commit'lemeden önce, onları "staging area"ya eklemeniz gerekir:
+
+git add .  # Tüm değiştirilmiş ve yeni dosyaları ekler.
+
+Veya belirli dosyaları eklemek için:
+
+git add dosya1.txt dosya2.txt
+
